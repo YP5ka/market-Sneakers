@@ -24,7 +24,7 @@ function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToF
     return(
         <div className="content p-40">
             <div className="d-flex align-center justify-between mb-40 "> 
-                <h1>{searchValue ? `Поиску по запросу: ${searchValue}`: "Все кроссовки"}</h1>
+                <h1>{searchValue ? `Поиск по запросу: ${searchValue}`: "Все кроссовки"}</h1>
                 <div className=" search-block d-flex">
                     <img src = "/img/search.svg" alt = "search"/>
                     {searchValue &&  
