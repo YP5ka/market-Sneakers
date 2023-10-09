@@ -6,7 +6,7 @@ import React from 'react'
 
 
 
-function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToFavorite, onAddToCart, cartItems, isLoading}) {
+function Home({items, searchValue, setSearchValue, onChangeSearchInput, onAddToFavorite, onAddToCart, isLoading}) {
     const {isItemAdded} = React.useContext(AppContext)
     const renderItems = () => {
         const filteredItems = items.filter((item) => item.name.toLowerCase().includes(searchValue.toString().toLowerCase()));
